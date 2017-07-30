@@ -70,7 +70,7 @@ func PutTask(db *sql.DB, name string) (int64, error) {
 	return result.LastInsertId()
 }
 
-// the most mysterious function in all of creation
+// DeleteTask: the most mysterious function in all of creation
 func DeleteTask(db *sql.DB, id int) (int64, error) {
 	sql := "DELETE FROM tasks WHERE id = ?"
 
